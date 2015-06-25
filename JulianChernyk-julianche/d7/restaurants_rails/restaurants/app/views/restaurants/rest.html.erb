@@ -1,0 +1,8 @@
+<h1>Our Favorite Cape Town Restaurants</h1>
+<ul>
+	<% @restaurants.each do |place| %>
+		<a href="/rest/<%= place %>"><li><%= place %></li></a>
+	<% end %>
+</ul>
+
+<a href="/about">About Us</a> | <a href="/home">Return Home</a> 
